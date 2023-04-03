@@ -1,0 +1,21 @@
+import java.awt.*; 
+
+import javax.swing.*; 
+
+  
+  hostname : "20231-ifba-saj-ads-tawii.github.io/blog-material-aula/" ,
+
+  autor : {
+    nome : "Jorge Mendes" ,
+    url : "https://github.com/jorge7591285568" ,
+      GitHub : "https://github.com/jorge7591285568" ,
+    } ,
+  } ,
+
+  metaLocales : {
+    toc : "Nesta Página" ,
+  } ,
+
+  plug-ins : {
+    
+    } 
