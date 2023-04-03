@@ -1,0 +1,66 @@
+Esses tipos de variáveis são tipos primitivos do Java: o valor que elas guardam são o real conteúdo da variável. Quando você utilizar o operador de atribuição = o valor será copiado.
+
+int i = 5; // i recebe uma cópia do valor 5
+int j = i; // j recebe uma cópia do valor de i
+i = i + 1; // i vira 6, j continua 5
+
+Aqui, i fica com o valor de 6. Mas e j? Na segunda linha, j está valendo 5. Quando i passa a valer 6, será que j também muda de valor? Não, pois o valor de um tipo primitivo sempre é copiado
+Apesar da linha 2 fazer j = i, a partir desse momento essas variáveis não tem relação nenhuma: o que acontece com uma, não repete em nada com a outra
+#O if e o else
+
+O if e o else
+A sintaxe do if no Java é a seguinte:
+
+
+if (condicaoBooleana) {
+    codigo;
+}
+Uma condição booleana é qualquer expressão que retorne true ou false. Para isso, você pode usar os operadores <, >, <=, >= e outros. Um exemplo:
+
+int idade = 15;
+if (idade < 18) {
+    System.out.println("Não pode entrar");
+  }
+  
+  nt idade =i 15; 
+if (idade < 18) {
+    System.out.println("Não pode entrar");
+}
+Além disso, você pode usar a cláusula else para indicar o comportamento que deve ser executado no caso da expressão booleana ser falsa:
+
+int idade = 15;
+if (idade < 18) {
+    System.out.println("Não pode entrar");
+} else {
+    System.out.println("Pode entrar");
+}
+Você pode concatenar expressões booleanas através dos operadores lógicos "E" e "OU". O "E" é representado pelo && e o "OU" é representado pelo || .
+
+Um exemplo seria verificar se ele tem menos de 18 anos e se ele não é amigo do dono:
+
+int idade = 15;
+boolean amigoDoDono = true;
+if (idade < 18 && amigoDoDono == false) {
+    System.out.println("Não pode entrar");
+}
+else {
+    System.out.println("Pode entrar");
+}
+Esse código poderia ficar ainda mais legível, utilizando-se o operador de negação, o !. Esse operador transforma o resultado de uma expressão booleana de false para true e vice versa.
+
+int idade = 15;
+boolean amigoDoDono = true;
+if (idade < 18 && !amigoDoDono) {
+    System.out.println("Não pode entrar");
+} else {
+    System.out.println("Pode entrar");
+}
+Perceba na linha 3 que o trecho amigoDoDono == false virou !amigoDoDono. Eles têm o mesmo valor.
+
+Para comparar se uma variável tem o mesmo valor que outra variável ou valor, utilizamos o operador ==. Perceba que utilizar o operador = dentro de um if vai retornar um erro de compilação, já que o operador = é o de atribuição.
+
+int mes = 1;
+if (mes == 1) {
+    System.out.println("Você deveria estar de férias");
+} 
+
