@@ -1,4 +1,4 @@
 # 20231ifbaADS
-material de aula POO
+material  de java
 
-execrcios de JAVA para a cadetra de POO do IFBA de Santo Antonio de Jesus
+exercicios de JAVA para a cadetra de POO do IFBA de Santo Antonio de Jesus - Bahia
