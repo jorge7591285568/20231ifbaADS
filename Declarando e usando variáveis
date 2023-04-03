@@ -1,0 +1,59 @@
+Dentro de um bloco, podemos declarar variáveis e usá-las. Em Java, toda variável tem um tipo que não pode ser mudado, uma vez que declarado:
+
+tipoDaVariavel nomeDaVariavel;  
+
+Por exemplo, é possível ter uma idade que guarda um número inteiro:
+int idade;
+idade = 15; 
+
+Com isso, você declara a variável idade, que passa a existir a partir daquela linha. Ela é do tipo int, que guarda um número inteiro. A partir daí, você pode usá-la, primeiramente atribuindo valores.
+
+A linha a seguir é a tradução de: "idade deve valer quinze”.
+
+// declara a idade
+int idade;
+idade = 15; 
+
+Além de atribuir, você pode utilizar esse valor. O código a seguir declara novamente a variável idade com valor 15 e imprime seu valor na saída padrão através da chamada a System.out.println.
+
+// imprime a idade
+System.out.println(idade);  
+
+Por fim, podemos utilizar o valor de uma variável para algum outro propósito, como alterar ou definir uma segunda variável. O código a seguir cria uma variável chamada idadeNoAnoQueVem com valor de idade mais um.
+
+// calcula a idade no ano seguinte
+int idadeNoAnoQueVem;
+idadeNoAnoQueVem = idade + 1; 
+
+No mesmo momento que você declara uma variável, também é possível inicializá-la por praticidade:
+
+int idade = 15; 
+
+Você pode usar os operadores +++, −-−, /// e ∗*∗ para operar com números, sendo eles responsáveis pela adição, subtração, divisão e multiplicação, respectivamente. Além desses operadores básicos, há o operador % (módulo) que nada mais é que o resto de uma divisão inteira. Veja alguns exemplos:        
+
+int quatro = 2 + 2;
+int tres = 5 - 2; 
+int oito = 4 * 2; 
+
+Representar números inteiros é fácil, mas como guardar valores reais, tais como frações de números inteiros e outros? Outro tipo de variável muito utilizado é o double, que armazena um número com ponto flutuante (e que também pode armazenar um número inteiro).  
+    
+exemplos
+
+int dezesseis = 64 / 4;
+int um = 5 % 2; // 5 dividido por 2 dá 2 e tem resto 1;
+                // o operador % pega o resto da divisão inteira 
+                
+ double pi = 3.14;
+double x = 5 * 10;  
+
+O tipo boolean armazena um valor verdadeiro ou falso, e só: nada de números, palavras ou endereços, como em algumas outras linguagens.
+
+boolean verdade = true;
+true e false são palavras reservadas do Java. É comum que um boolean seja determinado através de uma expressão booleana, isto é, um trecho de código que retorna um booleano, como o exemplo:   
+
+char letra = 'a';
+System.out.println(letra);
+
+Variáveis do tipo char são pouco usadas no dia a dia Veremos mais a frente o uso das Strings, que usamos constantemente, porém estas não são definidas por um tipo primitivo
+
+
