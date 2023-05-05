@@ -1,5 +1,28 @@
 public class Aluno {
-    private String nome;
+    private String aluno;
     private String matricula;
-    mochila mochila;
+    Mochila mochila;
+
+    public String getaluno() {
+        return aluno;
+    }
+
+    public void setaluno(String aluno){
+        this.setaluno(aluno);
+    }
+
+    public String getprofessor() {
+        return Professor;
+    }
+
+    public void setprofessor(String professor) {
+        this.setprofessor(professor);
+    }
+ public void solicitalivro(){
+
+ }
+ public void devolvelivro(){
+
+ }
+
 }
