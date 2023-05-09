@@ -1,13 +1,15 @@
+import java.util.ArrayList;
+
 class Biblioteca {
   public static void main(String[] args) {
-    
+  private Livro<List> Estante();
+  
+  public biblioteca(){
+  estante = new ArrayList();
+ }
   }
+
   livro livros;
-  estante estante;
+  Estante Estante;
 
-  public void adicionarlivro(livro livro);
-  Estante.add(livro);
-
-  Biblioteca biblioteca = new biblioteca();
-  biblioteca.adicionarlivro(new livro("java","livro de programacao"));
 }

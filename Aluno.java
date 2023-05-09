@@ -1,28 +1,24 @@
 public class Aluno {
     private String aluno;
     private String matricula;
-    Mochila mochila;
+    private mochila mochila2;
+
+    Aluno ("alunojorge","20191tadssaj002","mochila2"){
+        this.aluno = aluno;
+        this.matricula = matricula;
+        this.mochila2 = mochila2;
+    }
+
+public Livro EmprestaLivro(){
+    if(mochila2.size()<=2){
+    }
+}
 
     public String getaluno() {
         return aluno;
     }
 
-    public void setaluno(String aluno){
+    public void setaluno(String aluno) {
         this.setaluno(aluno);
     }
-
-    public String getprofessor() {
-        return Professor;
-    }
-
-    public void setprofessor(String professor) {
-        this.setprofessor(professor);
-    }
- public void solicitalivro(){
-
- }
- public void devolvelivro(){
-
- }
-
 }

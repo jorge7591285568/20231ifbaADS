@@ -1,23 +1,26 @@
 public class Professor {
-    private String nome;
-    private String matricula;
-    
+    private String Nome;
+    private String Matricula;
+    private mochila mochila1;
 
-    public String getaluno() {
-        return aluno;
+    Professor ("professorjorge","20191tadssaj001","mochila1"){
+        this.nome = nome;
+        this.matricula = matricula;
+        this.mochila1 = mochila1;
+}
+
+    public Livro EmprestaLivro() {
+        if (mochila1.size()<= 5) {
+           
+        }
+
     }
 
-    public void setaluno(String aluno){
-        this.setaluno(aluno);
+    public String getnome() {
+        return nome;
     }
 
-    public String getprofessor() {
-        return Professor;
+    public void setnome(String nome) {
+        this.setnome(nome);
     }
-
-    public void setprofessor(String professor) {
-        this.setprofessor(professor);
-    }
-
-    
 }
