@@ -1,0 +1,111 @@
+import java.util.Arrays;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+public class App {
+
+    public static void main(String[] args) {
+        
+        Filme Filme1 = new Filme("2001", "ficcao", 120);
+        Filme Filme2 = new Filme("3d", "ficcao", 120);
+        Filme Filme3 = new Filme("piranhas", "ficcao", 120);
+        dvd meudvd =new dvd();
+        meudvd.ligar();
+        meudvd.inserirfilme(Filme3);
+        meudvd.play();
+        meudvd.aumentavolume();
+    }
+    
+    ******************************************************
+    package br.edu.ifba.saj.ads.poo;
+
+// classes do dvd
+
+public class dvd {
+
+   
+    boolean ligado;
+    int volume;
+    Filme filme;
+
+    boolean play;
+
+    dvd() {
+        ligado = false;
+        volume = 2;
+        play = false;
+
+    }// sistema de ligar e desligar o dvd
+
+    void aumentavolume() {
+        if (ligado) {
+            if (volume < 5) {
+                volume++;
+            }
+        }
+
+    }
+
+    void diminuivolume() {
+        if (ligado) {
+            if (volume > 1) {
+                volume--;
+            }
+
+        }
+
+    }// sistema de inserir e ejetar o dvd
+
+    void inserirfilme(Filme filme) {
+        if (ligado) {
+            this.filme = filme;
+        }
+    }
+
+    void ligar() {
+        ligado = true;
+    }
+
+    void desligar() {
+        ligado = false;
+    }// sistema de play e stop
+
+    void play() {
+        if (ligado) {
+            if (this.filme != null) {
+                play = true;
+                System.out.println(filme.nome + " - " + filme.duracao);
+                System.out.println(filme.categoria);
+            }
+        }
+    }
+
+    void stop() {
+        if (ligado) {
+            if (play) {
+                play = false;
+            }
+        }
+    }
+}
+**********************************************************************************
+
+
+package br.edu.ifba.saj.ads.poo;
+
+// objeto Filme
+ class Filme {
+    String nome;
+    String categoria;
+    double duracao;
+
+    Filme(String nome, String categoria, double duracao) {
+        this.nome = nome;
+        this.categoria = categoria;
+        this.duracao = duracao;
+    }
+      
+
+    }
+
+    
